@@ -4,6 +4,7 @@ Example Android App that showcases deep linking of intent
 # How to demo?
 
 1. Go to [Releases](https://github.com/MplusKASSA/android-deep-link-intent-example/releases) and install the APK on your device.
+   (or, download the source and build it yourself)
 2. Go to https://mpluskassa.github.io/android-deep-link-intent-example/ on your device and click the link there.
 3. Done. This should open the activity with the following screen:
 
