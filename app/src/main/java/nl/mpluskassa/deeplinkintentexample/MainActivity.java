@@ -45,7 +45,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        String amount = getIntent().getStringExtra("amount");
+        String amount = null;
+
+        if (getIntent().getData() != null)
+            amount = getIntent().getData().getQueryParameter("amount");
+        else
+            amount = getIntent().getStringExtra("amount");
+
         if (amount == null)
             ((TextView)findViewById(R.id.textview_first)).setText("No amount passed to Intent");
         else
